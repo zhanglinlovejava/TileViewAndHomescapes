@@ -1,6 +1,7 @@
 package com.moagrius;
 
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.moagrius.tileview.TileView;
 

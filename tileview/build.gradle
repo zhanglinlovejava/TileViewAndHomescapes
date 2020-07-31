@@ -1,4 +1,3 @@
-apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 
 def version = "4.0.7"
@@ -8,7 +7,6 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'com.novoda:bintray-release:0.9'
   }
 }
 
@@ -45,13 +43,4 @@ dependencies {
   implementation 'com.jakewharton:disklrucache:2.0.2'
   api 'com.moagrius:scrollview:1.0.11'
 
-}
-
-publish {
-  userOrg = 'moagrius'
-  groupId = 'com.moagrius'
-  artifactId = 'tileview'
-  publishVersion = version
-  desc = 'Android tiling image library'
-  website = 'https://github.com/moagrius/TileView'
 }

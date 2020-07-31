@@ -21,6 +21,7 @@ public class MainActivity extends Activity implements FileCopier.Listener {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+
     setContentView(R.layout.main);
     findViewById(R.id.textview_demos_tileview_internal).setOnClickListener(view -> showStorageDemoOrWarning(Helpers.INTERNAL_STORAGE_KEY, getFilesDir(), TileViewDemoInternalStorage.class));
     findViewById(R.id.textview_demos_tileview_external).setOnClickListener(view -> showStorageDemoOrWarning(Helpers.EXTERNAL_STORAGE_KEY, Environment.getExternalStorageDirectory(), TileViewDemoExternalStorage.class));

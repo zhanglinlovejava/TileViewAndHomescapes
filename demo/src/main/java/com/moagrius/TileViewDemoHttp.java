@@ -3,7 +3,8 @@ package com.moagrius;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.moagrius.tileview.Tile;
 import com.moagrius.tileview.TileView;

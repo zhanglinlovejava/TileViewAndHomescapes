@@ -1,7 +1,8 @@
 package com.moagrius;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.moagrius.tileview.TileView;
 import com.moagrius.widget.ScalingScrollView;
@@ -18,7 +19,7 @@ public class TileViewDemoAssets extends TileViewDemoActivity {
     tileView.setMinimumScaleMode(ScalingScrollView.MinimumScaleMode.CONTAIN);
     new TileView.Builder(tileView)
         .setSize(16384, 13056)
-        .defineZoomLevel("tiles/phi-1000000-%1$d_%2$d.jpg")
+        .defineZoomLevel("bg/phi-1000000-%1$d_%2$d.jpg")
         .build();
   }
 

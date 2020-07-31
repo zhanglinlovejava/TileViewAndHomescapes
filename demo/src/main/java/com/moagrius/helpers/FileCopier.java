@@ -24,9 +24,9 @@ public class FileCopier {
     Log.d("TV", "about to copy asset tiles to " + mDirectory);
     Helpers.saveBooleanPreference(activity, mPreferencesKey, false);
     AssetManager assetManager = activity.getAssets();
-    String[] assetPaths = assetManager.list("tiles");
+    String[] assetPaths = assetManager.list("bg");
     for (String assetPath : assetPaths) {
-      InputStream assetStream = assetManager.open("tiles/" + assetPath);
+      InputStream assetStream = assetManager.open("bg/" + assetPath);
       File dest = new File(mDirectory, assetPath);
       FileOutputStream outputStream = new FileOutputStream(dest);
       Helpers.copyStreams(assetStream, outputStream);
