@@ -80,18 +80,16 @@ public class TileViewDemoAdvanced extends AppCompatActivity {
                 case 2:
                     lottieView.setAnimation("lottie/puddle_jumper/puddle_jumper.json");
                     lottieView.setImageAssetsFolder("lottie/puddle_jumper/images");
-                    lottieView.setRepeatCount(-1);
                     updateViewSize(1000, 1000, lottieView);
                     break;
                 case 3:
                     lottieView.setAnimation("lottie/open_gift_before.json");
                     lottieView.setImageAssetsFolder("lottie/open_gift_before");
-                    lottieView.setRepeatCount(-1);
                     break;
                 case 4:
-                    lottieView.setAnimation("lottie/sapphire1/sapphire.json");
-                    lottieView.setImageAssetsFolder("lottie/sapphire1/images");
-                    lottieView.setRepeatCount(-1);
+                    lottieView.setAnimation("lottie/exp_land.json");
+                    lottieView.setImageAssetsFolder("lottie/exp_land");
+                    lottieView.setRepeatCount(0);
                     break;
             }
             lottieView.playAnimation();
@@ -149,7 +147,7 @@ public class TileViewDemoAdvanced extends AppCompatActivity {
         LottieAnimationView birdView = addLottieView(scalingMarkerPlugin, jsonName, "", -1, left, top);
         birdView.post(() -> FlyingAnimationHelper.create()
                 .setSource(birdView)
-                .setDuration(10000)
+                .setDuration(jsonName.contains("1") ? 15000 : 28000)
                 .setFlyRadius(700)
                 .setRepeatCount(-1)
                 .setDirection(Path.Direction.CCW)
